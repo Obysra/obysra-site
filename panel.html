@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Obysra | Admin Panel Galerisi</title>
+<link rel="preload" href="../public/css/common.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="../public/css/common.min.css"></noscript>  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="icon" href="img/favicon.webp" type="image/webp">
+</head>
+<body>
+    <header class="navbar">
+      <div class="menu-toggle">
+    <i class="fas fa-bars"></i>
+  </div>
+      <a href="anasayfa.html" class="logo">
+        <img src="img/obsyra-beyaz.webp" alt="Obysra Logo" class="logo-img">
+      </a>
+  <nav class="nav-links">
+    <a href="anasayfa.html">Ana Sayfa</a>
+    <a href="hakkimizda.html">Hakkımızda</a>
+
+    <div class="dropdown hover-dropdown">
+      <a href="#" class="dropbtn">
+        Hizmetlerimiz <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+      </a>
+<div class="dropdown-content">
+        <a href="medya.html">Sosyal Medya Yönetmenliği</a>
+        <a href="admin.html">Admin Panelleri</a>
+        <a href="web.html">Kuruma Özel Web Siteleri</a>
+        <a href="uygulama.html">Kuruma Özel Uygulamalar</a>
+        <a href="mobil.html">Mobil Uygulamalar</a>
+        <a href="qr.html">QR Menü Yazılımı</a>
+        <a href="kurye.html">Kurye Takip ve Otomasyon Yazılımı</a>
+      </div>
+    </div>
+
+    <a href="proje.html">Projelerimiz</a>
+  <a href="iletisim.html">İletişim</a>
+</nav>
+    <div class="social">
+  <a href="https://instagram.com/obysra_yazilim" target="_blank"><img src="img/instagram.webp" alt="Instagram"></a>
+  <a href="https://x.com/obysra_yazilim" target="_blank"><img src="img/x.webp" alt="X"></a>
+</div>
+  </header>
+<main>
+  <section class="obysra-info">
+    <div class="obysra-container">
+      <h2 class="obysra-title">Obysra — Admin Paneli</h2>
+      <p class="obysra-subtitle">Tüm projelerin tek merkezden yönetimi: Hızlı, esnek ve güvenilir kontrol paneli</p>
+
+      <div class="obysra-description">
+        <p>
+          Obysra’nın geliştirdiği <strong>Merkezi Admin Paneli</strong>, web sitelerinizden demirbaş sistemine,
+          müşteri yorumlarından içerik yönetimine kadar tüm projelerinizi tek bir ekrandan yönetmenizi sağlar.
+          Amacımız; <em>operasyonel süreçleri basitleştirmek, verimliliği artırmak ve ekip çalışmasını güçlendirmektir.</em>
+        </p>
+
+        <ul>
+          <li><strong>Çoklu Proje Desteği:</strong> Birden fazla site ve uygulamayı aynı panelde yönetin.</li>
+          <li><strong>Rol Bazlı Yetkilendirme:</strong> Yöneticiler, editörler ve personel için özelleştirilmiş izinler.</li>
+          <li><strong>Gerçek Zamanlı Analiz:</strong> Trafik, işlem ve performans verilerini panelde canlı takip.</li>
+          <li><strong>Entegre Varlık Yönetimi:</strong> Demirbaş, kullanıcı ve içerik verilerini tek veri tabanında saklayın.</li>
+          <li><strong>Gelişmiş Filtreleme & Arama:</strong> Proje, tarih, kategori ya da kullanıcı bazlı hızlı sorgular.</li>
+          <li><strong>Bildirim Sistemi:</strong> Kritik işlemler ve hatalar için anında e-posta veya panel bildirimi.</li>
+          <li><strong>Toplu Veri İşlemleri:</strong> Excel/CSV ile içe aktarma – dışa aktarma; yüzlerce kaydı saniyeler içinde yönetin.</li>
+          <li><strong>Responsive Tasarım:</strong> Masaüstü, tablet ve mobilde sorunsuz yönetim deneyimi.</li>
+        </ul>
+
+        <p>
+          Obysra Admin Paneli; modern arayüzü, güvenli altyapısı ve ölçeklenebilir mimarisiyle
+          ekiplerinize kusursuz bir kontrol merkezi sunar. Projeler büyüdükçe bile,
+          <strong>tek panel, tam hâkimiyet!</strong>
+        </p>
+
+        <p class="obysra-highlight">
+          Obysra ile süreçlerinizi merkezileştirin, zamandan kazanıp vizyonunuzu büyütün.
+        </p>
+      </div>
+    </div>
+  </section>
+<section class="gallery-section">
+  <section class="gallery">
+    <img src="../public/img/admin/giris1_result.webp" alt="Admin 1" />
+    <img src="../public/img/admin/index-edit_result.webp" alt="Admin 2" />
+    <img src="../public/img/admin/index-edit2_result.webp" alt="Admin 3" />
+    <img src="../public/img/admin/iletisim1_result.webp" alt="Admin 4" />
+    <img src="../public/img/admin/hak-hukuk_result.webp" alt="Admin 5" />
+    <img src="../public/img/admin/menü_result.webp" alt="Admin 6" />
+  </section>
+</section>
+  <div class="modal" id="modal">
+    <i class="fas fa-times close-btn" onclick="closeModal()"></i>
+    <img id="modalImage" src="" alt="Büyük Görsel" />
+    <div class="controls">
+      <i class="fas fa-chevron-left" onclick="prevImage()"></i>
+      <i class="fas fa-chevron-right" onclick="nextImage()"></i>
+    </div>
+  </div>
+</main>
+<div class="floating-buttons">
+  <a href="https://wa.me/905534610362" target="_blank" class="float-btn whatsapp" title="WhatsApp ile iletişime geç">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+  </a>
+  <a href="tel:+905534610362" class="float-btn phone" title="Telefon et">
+    <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" alt="Telefon">
+  </a>
+</div>
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-logo">
+      <img src="img/obsyra-beyaz.webp" alt="Obysra Logo">
+    </div>
+    <div class="footer-center">
+      <p class="copyright">© 2025 Obysra. Tüm hakları saklıdır.</p>
+    </div>
+    <div class="footer-contact">
+      <p><strong>📞</strong> +90 553 461 03 62</p>
+      <p><strong>📧</strong> obysra.yazilim@gmail.com</p>
+    </div>
+  </div>
+</footer>
+  <script>
+    const galleryImages = document.querySelectorAll('.gallery img');
+    const modal = document.getElementById('modal');
+    const modalImage = document.getElementById('modalImage');
+    let currentIndex = 0;
+    galleryImages.forEach((img, index) => {
+      img.addEventListener('click', () => {
+        currentIndex = index;
+        showImage();
+      });
+    });
+    function showImage() {
+      modalImage.src = galleryImages[currentIndex].src;
+      modal.style.display = 'flex';
+    }
+    function closeModal() {
+      modal.style.display = 'none';
+    }
+    function prevImage() {
+      currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+      showImage();
+    }
+    function nextImage() {
+      currentIndex = (currentIndex + 1) % galleryImages.length;
+      showImage();
+    }
+    window.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeModal();
+    });
+  </script>
+</body>
+</html>
