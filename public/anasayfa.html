@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Obysra | Özgün Yazılım Çözümleri</title>
+  <meta name="description" content="Obysra ile dijital dönüşümünüzü hızlandırın. Yazılım geliştirme, danışmanlık ve projelerde güçlü çözüm ortağınız.">
+  <meta name="keywords" content="Obysra, yazılım, danışmanlık, web tasarım, dijital dönüşüm, frontend, backend">
+  <meta name="author" content="Obysra Yazılım">
+  <meta name="robots" content="index, follow">
+
+  <!-- Favicon -->
+  <link rel="icon" href="img/favicon.webp" type="image/webp">
+
+  <!-- Stil dosyaları -->
+<link rel="preload" href="../public/css/style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="../public/css/style.min.css"></noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600&family=Rubik:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+      <div class="menu-toggle">
+    <i class="fas fa-bars"></i>
+  </div>
+      <a href="anasayfa.html" class="logo">
+        <img src="img/obsyra-beyaz.webp" alt="Obysra Logo" class="logo-img">
+      </a>
+  <nav class="nav-links">
+    <a href="anasayfa.html">Ana Sayfa</a>
+    <a href="hakkimizda.html">Hakkımızda</a>
+
+    <div class="dropdown hover-dropdown">
+      <a href="#" class="dropbtn">
+        Hizmetlerimiz <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+      </a>
+<div class="dropdown-content">
+        <a href="medya.html">Sosyal Medya Yönetmenliği</a>
+        <a href="admin.html">Admin Panelleri</a>
+        <a href="web.html">Kuruma Özel Web Siteleri</a>
+        <a href="uygulama.html">Kuruma Özel Uygulamalar</a>
+        <a href="mobil.html">Mobil Uygulamalar</a>
+        <a href="qr.html">QR Menü Yazılımı</a>
+        <a href="kurye.html">Kurye Takip ve Otomasyon Yazılımı</a>
+      </div>
+    </div>
+
+    <a href="proje.html">Projelerimiz</a>
+  <a href="iletisim.html">İletişim</a>
+</nav>
+    <div class="social">
+  <a href="https://instagram.com/obysra_yazilim" target="_blank"><img src="img/instagram.webp" alt="Instagram"></a>
+  <a href="https://x.com/obysra_yazilim" target="_blank"><img src="img/x.webp" alt="X"></a>
+</div>
+  </header>
+  <section class="hero">
+    <div class="hero-content">
+<h1 id="hero-title">Yarının Yazılımını Bugün Kullanın</h1>
+<p id="hero-subtext">Obysra ile tanışın, süreçlerinizi dijitalleştirin.</p>
+    </div>
+  </section>
+<section class="about-obysra">
+  <div class="about-wrapper">
+    <h2 class="about-title">Neden <span>Obysra?</span></h2>
+    <p class="about-text">
+      <strong>Obysra</strong>, bireysel ve kurumsal müşterilere özel <strong>web siteleri</strong>, <strong>yönetim panelleri</strong> ve <strong>mobil uygulamalar</strong> geliştiren yenilikçi bir yazılım markasıdır.<br><br>
+      Modern teknolojilerle donatılmış altyapımız sayesinde <span class="highlight">hızlı</span>, <span class="highlight">güvenilir</span> ve <span class="highlight">kullanıcı odaklı</span> çözümler sunuyoruz.<br><br>
+      Hukuk bürolarından sağlık kuruluşlarına, girişimcilerden kurumsal firmalara kadar birçok alanda özgün projeler geliştiriyoruz.<br><br>
+      <em>Hayalinizdeki dijital projeyi gerçeğe dönüştürmek için</em> <strong>Obysra</strong> ile tanışın!
+    </p>
+  </div>
+</section>
+  <section class="works"data-aos="fade-up">
+    <h2>Yaptığımız Çalışmalar</h2>
+    <div class="cards">
+        <div class="card" data-aos="zoom-in">
+        <h3>Mobil Uygulamalar</h3>
+        <p>Android ve iOS için yenilikçi uygulamalar.</p>
+      </div>
+      <div class="card" data-aos="zoom-in">
+        <h3>Web Siteleri</h3>
+        <p>Kurumsal ve modern tasarımlar.</p>
+      </div>
+      <div class="card" data-aos="zoom-in">
+        <h3>Yönetim Panelleri</h3>
+        <p>Verimli ve kullanıcı dostu çözümler.</p>
+      </div>
+    </div>
+  </section>
+<section class="gallery" data-aos="zoom-in">
+  <div class="gallery-item">
+    <img src="../public/img/demirbas.webp" alt="Demirbaş Takip Sistemi" onclick="openModal(this.src)">
+    <a href="demirbas.html" class="gallery-btn">Detaylı İncele</a>
+  </div>
+  <div class="gallery-item">
+    <img src="../public/img/avukat.webp" alt="Avukatlık Sitesi" onclick="openModal(this.src)">
+    <a href="avukat.html" class="gallery-btn">Detaylı İncele</a>
+  </div>
+  <div class="gallery-item">
+    <img src="../public/img/panel.webp" alt="Yönetim Paneli" onclick="openModal(this.src)">
+    <a href="panel.html" class="gallery-btn">Detaylı İncele</a>
+  </div>
+</section>
+<div id="modal" class="modal" onclick="closeModal()">
+  <img id="modal-img" src="" alt="Büyük Görsel">
+</div>
+<section class="vizyon">
+  <div class="vizyon-header">
+    <h2 class="vizyon-title"data-aos="zoom-in">Vizyonumuz</h2>
+    <p class="vizyon-subtitle"data-aos="zoom-in">Başarılı bir yazılım stratejisinin 3 temel unsuruna odaklanıyoruz.</p>
+  </div>
+  <div class="vizyon-liste">
+    <div class="vizyon-blok">
+      <div class="vizyon-ikon">💡</div>
+      <div class="vizyon-metin"data-aos="zoom-in">
+        <h3>Yaratıcılık</h3>
+        <p>Potansiyel müşterilerinizin dikkatini çeken ve sunduklarınıza ilgi duymalarını sağlayan tasarımlar yapıyoruz.</p>
+      </div>
+    </div>
+    <div class="vizyon-blok">
+      <div class="vizyon-ikon">🎯</div>
+      <div class="vizyon-metin"data-aos="zoom-in">
+        <h3>Odaklanma</h3>
+        <p>Müşterilerimizin hedeflerine ulaşmaları için kararlı ve stratejik çözümler geliştiriyoruz.</p>
+      </div>
+    </div>
+    <div class="vizyon-blok"data-aos="zoom-in">
+      <div class="vizyon-ikon">⚙️</div>
+      <div class="vizyon-metin">
+        <h3>Optimizasyon</h3>
+        <p>Başarımızı, sunduğumuz somut ve etkili sonuçlarla ölçüyoruz.</p>
+      </div>
+    </div>
+  </div>
+</section>
+  <section class="services"data-aos="fade-up">
+    <h2>Hizmet Verdiğimiz Alanlar</h2>
+    <div class="cards">
+      <div class="card" data-aos="zoom-in">
+        <h3>Avukatlık Siteleri</h3>
+        <p>Profesyonel hukuk çözümleri.</p>
+      </div>
+      <div class="card" data-aos="zoom-in">
+        <h3>Sağlık ve Poliklinik</h3>
+        <p>Hasta ve randevu sistemleri.</p>
+      </div>
+      <div class="card" data-aos="zoom-in">
+        <h3>Kurumsal Firmalar</h3>
+        <p>Markanıza özel yazılım çözümleri.</p>
+      </div>
+    </div>
+    <p>
+  İşletmenizin dijital dönüşüm yolculuğunda size rehberlik ediyoruz. <strong>Web yazılımı, mobil uygulama geliştirme, yönetim panelleri, kurumsal web siteleri,</strong> e-ticaret sistemleri ve <strong>veri analizi çözümleri</strong> gibi birçok alanda hizmet veriyoruz. Ayrıca sektöre özel çözümlerimizle <strong>farklı ihtiyaçlara özel projeler</strong> de geliştiriyoruz.
+</p>
+
+  </section>
+<section class="neden-sec">
+  <div class="neden-header"data-aos="fade-up">
+  <span class="neden-etiket">NEDEN BİZİ SEÇMELİSİNİZ</span>
+  <h2 class="neden-title">
+    Dijital Pazarlama İçin <br />
+    Bizi En İyi Seçenek Yapan 3 Faktör
+  </h2>
+</div>
+  <div class="neden-kartlar"data-aos="zoom-in">
+    <div class="neden-kart">
+      <div class="svg-icon">
+        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M11 12L8 9a3 3 0 0 1 4-4l1 1 1-1a3 3 0 1 1 4 4l-3 3"/>
+          <path d="M17 16l-1-1a3 3 0 0 0-4 0l-1 1"/>
+          <path d="M3 21h18"/>
+        </svg>
+      </div>
+      <h3>Memnuniyet Önceliği</h3>
+      <p>İş ortaklarımızın hedeflerini öncelik olarak kabul ederiz ve tüm süreci bu doğrultuda şekillendiririz.</p>
+    </div>
+    <div class="neden-kart">
+      <div class="svg-icon">
+        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#1f2937" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="7" r="3"/>
+          <path d="M5.5 21a7.5 7.5 0 0 1 13 0"/>
+          <circle cx="5" cy="7" r="2"/>
+          <path d="M2 21a4 4 0 0 1 4-4"/>
+          <circle cx="19" cy="7" r="2"/>
+          <path d="M18 17a4 4 0 0 1 4 4"/>
+        </svg>
+      </div>
+      <h3>Harika İnsanlar</h3>
+      <p>Uzman ve deneyimli ekibimizle, her projeye yaratıcı ve çözüm odaklı yaklaşıyoruz.</p>
+    </div>
+    <div class="neden-kart">
+      <div class="svg-icon">
+        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/>
+          <circle cx="12" cy="12" r="4"/>
+          <line x1="4.93" y1="4.93" x2="9.17" y2="9.17"/>
+          <line x1="14.83" y1="14.83" x2="19.07" y2="19.07"/>
+          <line x1="14.83" y1="9.17" x2="19.07" y2="4.93"/>
+          <line x1="4.93" y1="19.07" x2="9.17" y2="14.83"/>
+        </svg>
+      </div>
+      <h3>Mükemmel Destek</h3>
+      <p>İletişim, destek ve geri bildirim süreçlerimizle her zaman yanınızdayız.</p>
+    </div>
+  </div>
+</section>
+<div class="floating-buttons">
+  <a href="https://wa.me/905534610362" target="_blank" class="float-btn whatsapp" title="WhatsApp ile iletişime geç">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+  </a>
+  <a href="tel:+905534610362" class="float-btn phone" title="Telefon et">
+    <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" alt="Telefon">
+  </a>
+</div>
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-logo">
+      <img src="img/obsyra-beyaz.webp" alt="Obysra Logo">
+    </div>
+    <div class="footer-center">
+      <p class="copyright">© 2025 Obysra. Tüm hakları saklıdır.</p>
+    </div>
+    <div class="footer-contact">
+      <p><strong>📞</strong> +90 553 461 03 62</p>
+      <p><strong>📧</strong> obysra.yazilim@gmail.com</p>
+    </div>
+  </div>
+</footer>
+<script>
+  const title = document.getElementById("hero-title");
+  const subtext = document.getElementById("hero-subtext");
+  title.addEventListener("animationend", (e) => {
+    if (e.animationName === "typing") {
+      title.style.borderRight = "none";
+      setTimeout(() => {
+        subtext.classList.add("zoom-in");
+      }, 300);
+    }
+  });
+    function openModal(src) {
+    const modal = document.getElementById("modal");
+    const modalImg = document.getElementById("modal-img");
+    modalImg.src = src;
+    modal.style.display = "flex";
+  }
+  function closeModal() {
+    document.getElementById("modal").style.display = "none";
+  }
+  document.addEventListener('DOMContentLoaded', () => {
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>AOS.init();</script>
+</body>
+</html>
